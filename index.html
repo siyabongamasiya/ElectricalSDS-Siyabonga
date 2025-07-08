@@ -3,81 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9eb47d842f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>SDS</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1>Safety Rules tips</h1>
-            <img src="" alt="">
-        </div>
+        <div class="red-line"></div>
+        <h1><i class="fa-solid fa-bolt"></i>Safety Rules tips<i class="fa-solid fa-bolt"></i></h1>
+        <img src="./assets/harzard_sign.png" alt="harzard-sign">
     </header>
     <main>
         <!--Equipment section-->
-        <section>
-            <div>
+        <section class="main-section">
+            <div class="main-section-header">
                 <div>
                     <h2>Equipment & Maintenance</h2>
-                    <p>Maintenance of equipment is very important ,If employers <br> don't inspect, repair, and upgrade their machinery, that can <br> lead to failure and electrical injury or death.</p>
+                    <p id="intro">Maintenance of equipment is very important ,If employers <br> don't inspect, repair, and upgrade their machinery, that can <br> lead to failure and electrical injury or death.</p>
                 </div>
-                <img src="" alt="">
+                <img src="./assets/Maintenance.png" alt="Maintenance-sign">
             </div>
-            <p></p>
+            <p class="subtitle">Maintenance Approaches:</p>
             <ul>
-                <li>Explosion-Proofing: Equipment must be maintained to prevent explosion risks from electrical faults.</li>
-                <li>Dust Proofing: Machinery must be protected from dust, which can cause mechanical or electrical failures.</li>
-                <li>Maintenance: Regular checks should be done to ensure parts like screws and gaskets are secure and functioning.</li>
-                <li>Reporting & Repair: Any issues must be reported immediately, and the affected equipment must not be used until repaired.</li>
+                <li class="body-text"><span>Explosion-Proofing:</span> Equipment must be maintained to prevent explosion risks from electrical faults.</li>
+                <li class="body-text"><span>Dust Proofing:</span> Machinery must be protected from dust, which can cause mechanical or electrical failures.</li>
+                <li class="body-text"><span>Maintenance:</span> Regular checks should be done to ensure parts like screws and gaskets are secure and functioning.</li>
+                <li class="body-text"><span>Reporting & Repair:</span> Any issues must be reported immediately, and the affected equipment must not be used until repaired.</li>
+
             </ul>
         </section>
 
         <!--Safety tips section-->
-        <section>
-            <div>
+        <section class="main-section">
+            <div class="main-section-header">
                 <div>
                     <h2>Safety Tips</h2>
                 </div>
-                <img src="" alt="">
+                <img src="./assets/safety.png" alt="">
+            </div>
             <ol>
-                <li>Plan Ahead:
- Create a project plan to identify hazards, use correct PPE/IPE, and locate power shutoffs.</li>
-                <li>Wear Proper Gear:
- Always wear rubber gloves, insulating sleeves, safety glasses, and fire-resistant clothing. Avoid metal items like jewelry.</li>
-                <li>Use the Buddy System:
- Work in pairs. Both must be trained in electrical safety and CPR to respond to emergencies.
-                <p>Follow Lock Out Tag Out (LOTO):
- Six steps:</p>
-                <ul>
-                    <li>Inspect for hazards</li>
-                    <li>Shut down the circuit</li>
-                    <li>Isolate equipment</li>
-                    <li>Lock and tag controls</li>
-                    <li>Check for stored energy</li>
-                   <li>Verify all steps</li>
-                </ul>
-</li>
+                <li class="body-text"><span>Plan Ahead:</span> Create a project plan to identify hazards, use correct PPE/IPE, and locate power shutoffs.</li>
+
+<li class="body-text"><span>Wear Proper Gear:</span> Always wear rubber gloves, insulating sleeves, safety glasses, and fire-resistant clothing. Avoid metal items like jewelry.</li>
+
+<li class="body-text"><span>Use the Buddy System:</span> Work in pairs. Both must be trained in electrical safety and CPR to respond to emergencies.</li>
+
+<p class="subtitle"><span>Follow Lock Out Tag Out (LOTO):</span> Six steps:</p>
+<ul>
+    <li class="body-text"><span>Step 1:</span> Inspect for hazards</li>
+    <li class="body-text"><span>Step 2:</span> Shut down the circuit</li>
+    <li class="body-text"><span>Step 3:</span> Isolate equipment</li>
+    <li class="body-text"><span>Step 4:</span> Lock and tag controls</li>
+    <li class="body-text"><span>Step 5:</span> Check for stored energy</li>
+    <li class="body-text"><span>Step 6:</span> Verify all steps</li>
+</ul>
+<br>
+<li class="body-text"><span>Avoid Wet Areas:</span> Dry or cover damp surfaces with non-conductive materials to reduce risk.</li>
+
+<li class="body-text"><span>Use GFCIs:</span> Ground Fault Circuit Interrupters automatically shut off power during surges or electrocution.</li>
+
+<li class="body-text"><span>Stay Clear of Power Lines:</span> Maintain at least 10 feet from overhead wires per OSHA guidelines.</li>
+
+<li class="body-text"><span>Inspect Cords and Outlets:</span> Replace damaged plugs, wires, and outlets. Watch for missing grounding prongs or signs of burning.</li>
+
                 
             </ol>
         </section>
 
         <!--common preventative tips section-->
-        <section>
-            <div>
+        <section class="main-section">
+            <div class="main-section-header">
                 <div>
                     <h2>Common Electrical Preventions.</h2>
                 </div>
-                <img src="" alt="">
+                <img src="./assets/preventative.png" alt="">
             </div>
-            <p>Preventions: </p>
+            <p class="subtitle">Preventions: </p>
             <ul>
-                <li>Before use, inspect safety glasses and gloves for signs of wear and tear, and other damage.</li>
-                <li>Do not attempt to do any electrical work if you are not trained.</li>
-                <li>Remove jewellery before working with electricity</li>
+                <li class="body-text">Before use, inspect safety glasses and gloves for signs of wear and tear, and other damage.</li>
+                <li class="body-text">Do not attempt to do any electrical work if you are not trained.</li>
+                <li class="body-text">Remove jewellery before working with electricity</li>
             </ul>
         </section>
     </main>
     <footer>
-        <div></div>
+        <div class="red-line"></div>
     </footer>
 </body>
 </html>

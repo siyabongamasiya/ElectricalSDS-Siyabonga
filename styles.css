@@ -1,4 +1,119 @@
 :root{
     /*colors*/
-    --title-color: #B22222
+    --titleAndHeaderColor: #B22222;
+    --sectionHeaderColor:#003366;
+    --backgroundColor:#FFFFFF;
+    --bodyTextColor:#333333;
+    --borderColor:#FF4500;
+    --iconColor:#1B4EF6;
+
+    /*typography*/
+    --h1Font:4.5vw;
+    --FamilyType: 'Inter', sans-serif;
+    --subtitleFont:24px;
+    --sectionTitleFont:48px;
+    --bodyTextFont:20px;
+    --introFont:25px;
+}
+
+*,::after,::before{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    color: var(--titleAndHeaderColor);
+    font-size: var(--h1Font);
+    font-family: var(--FamilyType);
+    margin-bottom: 10px;
+}
+
+.main-section-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.red-line{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--titleAndHeaderColor);
+}
+
+i{
+    color: var(--iconColor);
+}
+
+img{
+    width: 11vw;
+    height: 11vw;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.main-section{
+    width: 100vw;
+    height: auto;
+    border: 2px solid var(--borderColor); 
+    border-radius: 8px; 
+    margin-bottom: 10px;
+    padding:10px
+}
+
+img:hover{
+    transform: scale(1.4);
+}
+
+h2{
+    font-family: var(--FamilyType);
+    font-size: var(--sectionTitleFont);
+    color: var(--sectionHeaderColor);
+}
+
+.subtitle,#intro,span{
+    font-family: var(--FamilyType);
+    font-weight: bold;
+}
+
+#intro{
+    font-size: var(--introFont);
+}
+
+.body-text{
+    font-family: var(--FamilyType);
+    font-size: var(--bodyTextFont);
+    color: var(--bodyTextColor);
+}
+
+@media(max-width: 768px){
+    .main-section-header{
+       flex-direction: column;
+       gap: 10px;
+    }
+
+    img{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    header{
+        font-size: var(--h1Font);
+    }
+
 }
